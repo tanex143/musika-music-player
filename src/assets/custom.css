@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.7);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.min-h-60 {
+  min-height: 60vh;
+}
+
+.shadow-high {
+  box-shadow: 2px 2px 50px rgb(163, 163, 163);
+}
+
+.w-70 {
+  width: 21rem;
+}
+
+.ww-50 {
+  max-width: 40%;
+}
+
+.font-satisfy {
+  font-family: 'Satisfy', cursive !important;
+}
+
+.library-active {
+  margin-left: 35%;
+}
+
+@media screen and (max-width: 768px) {
+  .ww-50 {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .md\:ww-45 {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .md\:w-75 {
+    width: 25% !important;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .md\:w-75 {
+    width: 40%;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .xs\:w-75 {
+    width: 70%;
+    transition: all 0.3s ease-in;
+    border-radius: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .sm\:w-70 {
+    width: 21rem;
+  }
+}
+
+@keyframes to-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-on {
+  animation: to-rotate 20s linear forwards infinite;
+}
+
+.bg-bluesh {
+  background-color: #69c1ffa6;
+}
